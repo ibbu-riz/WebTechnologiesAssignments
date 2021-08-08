@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of engg. colleges</title>
+    <style>
+        body {
+            background-color: #EEEEEE;
+        }
+        table, th, td {
+            border: 1px solid #1f1f1f;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to College Portal</h1>
+    
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Website</th>
+        </tr>
+        <tr>
+            <td>Puducherry Technological University</td>
+            <td>Pillaichavady, Puducherry</td>
+            <td><a href="https://pec.edu" target="_blank" rel="noopener noreferrer">pec.edu</a></td>
+        </tr>
+        <tr>
+            <td>Perunthalaivar Kamarajar Institute of Engineering and Technology</td>
+            <td>Nedungadu, Karaikal</td>
+            <td><a href="https://pkiet.edu.in" target="_blank" rel="noopener noreferrer">pkiet.edu.in</a></td>
+        </tr>
+        <tr>
+            <td>National Institute of Technology</td>
+            <td>Karaikal</td>
+            <td><a href="https://nitpy.ac.in" target="_blank" rel="noopener noreferrer">nitpy.ac.in</a></td>
+        </tr>
+        <tr>
+            <td>Manakula Vinayagar Institute of Technology</td>
+            <td>Kalitheerthalkuppam, Puducherry</td>
+            <td><a href="https://mvit.edu.in" target="_blank" rel="noopener noreferrer">mvit.edu.in</a></td>
+        </tr>
+        <tr>
+            <td>Christ College Of Engineering and Technology</td>
+            <td>Puducherry</td>
+            <td><a href="https://christcet.edu.in" target="_blank" rel="noopener noreferrer">christcet.edu.in</a></td>
+        </tr>
+        <tr>
+            <td>Achariya College of Engineering and Technology</td>
+            <td>Puducherry</td>
+            <td><a href="https://acet.edu.in" target="_blank" rel="noopener noreferrer">acet.edu.in</a></td>
+        </tr>
+        <tr>
+            <td>Rajiv Gandhi College of Engineering and Technology</td>
+            <td>Puducherry</td>
+            <td><a href="https://rgcetpdy.ac.in" target="_blank" rel="noopener noreferrer">rgcetpdy.ac.in</a></td>
+        </tr>
+    </table>
+
+    <form action="./server.php" method="get">
+        <label for="department">Department</label>
+        <select name="department">
+            <option value="Computer Science & Engineering">CSE</option>
+            <option value="Electronics & Electrical Engineering">ECE</option>
+            <option value="Information Technology">IT</option>
+            <option value="Mechanical Engineering">MECH</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

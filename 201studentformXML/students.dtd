@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT student (name, regno, mark)*>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT regno (#PCDATA)>
+<!ELEMENT mark (#PCDATA)>

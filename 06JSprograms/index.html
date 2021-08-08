@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date validation, Last day of month, Max date, Base conversion</title>
+  </head>
+  <body></body>
+  <script>
+    var is_date = function (input) {
+      if (Object.prototype.toString.call(input) === "[object Date]")
+        return true;
+      return false;
+    };
+
+    console.log(is_date("October 13, 2021 11:13:00"));
+    console.log(is_date(new Date(86400000)));
+    console.log(is_date(new Date(99, 5, 24, 11, 33, 30, 0)));
+    console.log(is_date([1, 2, 4, 0]));
+
+    var lastday = function (y, m) {
+      return new Date(y, m, 0).getDate();
+    };
+    console.log(lastday(2021, 2));
+    console.log(lastday(2021, 7));
+    console.log(lastday(2021, 11));
+
+    var dates = [];
+
+    dates.push(new Date("2021/03/25"));
+    dates.push(new Date("2021/05/28"));
+    dates.push(new Date("2021/06/29"));
+    dates.push(new Date("2021/07/31"));
+
+    var maxDate = new Date(Math.max.apply(null, dates));
+
+    console.log(maxDate);
+
+    var base_convert = function (number, initial_base, change_base) {
+      if (
+        (initial_base && change_base) < 2 ||
+        (initial_base && change_base) > 36
+      )
+        return "Base between 2 and 36";
+
+      return parseInt(number + "", initial_base).toString(change_base);
+    };
+
+    console.log(base_convert(112, 8, 10));
+
+    console.log(base_convert("1101", 2, 10));
+  </script>
+</html>

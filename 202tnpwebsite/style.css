@@ -1,0 +1,40 @@
+body {
+  background-color: orange;
+}
+
+.logos img {
+  height: 70px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 20vh;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.banner-header {
+  font-size: 15px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    flex: 2;
+}

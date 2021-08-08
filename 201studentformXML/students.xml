@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE students SYSTEM "students.dtd">
+
+<?xml-stylesheet type="text/xsl" href="students.xsl"?>
+
+<students>
+    <student>
+        <name>Xyz</name> 
+        <regno>1000</regno>
+        <mark>90</mark>
+    </student>
+
+    <student>
+        <name>Abc</name>
+        <regno>1001</regno>
+        <mark>80</mark>
+    </student>
+
+    <student>
+        <name>Rst</name>
+        <regno>1002</regno>
+        <mark>89</mark>
+    </student>
+
+    <student>
+        <name>Pqr</name>
+        <regno>1003</regno>
+        <mark>87</mark>
+    </student>
+</students>
